@@ -10,37 +10,31 @@ import ServiceCardLayout from './ServiceCardLayout'
 
 const services = [
     {
-        service_id: "1",
         imgSrc: icon1,
         title: "Web Development",
         desc: "Building scalable web applications that ensure seamless user experiences and performance!"
     },
     {
-        service_id: "2",
         imgSrc: icon2,
         title: "App Development",
         desc: "Creating innovative mobile applications to engage users and drive business growth!"
     },
     {
-        service_id: "3",
         imgSrc: icon3,
         title: "Digital Marketing",
         desc: "Leveraging online strategies to enhance brand visibility and attract targeted audiences!"
     },
     {
-        service_id: "4",
         imgSrc: icon4,
         title: "Cloud Services",
         desc: "Providing flexible cloud solutions for improved collaboration and data accessibility!"
     },
     {
-        service_id: "5",
         imgSrc: icon5,
         title: "Graphic Design",
         desc: "Crafting visually stunning designs that effectively communicate your brand message!"
     },
     {
-        service_id: "6",
         imgSrc: icon6,
         title: "Video Editing",
         desc: "Transforming raw footage into engaging videos that captivate and inform your audience!"
@@ -61,7 +55,6 @@ const ServiceCard = () => {
                         {services.map((service, index) => (
                             <ServiceCardLayout
                                 key={index}
-                                service_id={service.service_id}
                                 imgSrc={service.imgSrc}
                                 title={service.title}
                                 desc={service.desc}

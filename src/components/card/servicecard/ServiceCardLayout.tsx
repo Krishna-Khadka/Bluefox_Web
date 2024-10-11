@@ -8,10 +8,9 @@ interface ServiceCardProps {
   imgSrc: StaticImageData,
   title: string,
   desc: string,
-  service_id: string,
 }
 
-const ServiceCardLayout = ({ imgSrc, title, desc, service_id }: ServiceCardProps) => {
+const ServiceCardLayout = ({ imgSrc, title, desc }: ServiceCardProps) => {
   return (
     <>
       {/* single service card layout  */}
